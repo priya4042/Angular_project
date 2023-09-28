@@ -1,0 +1,139 @@
+<div class=" border p-2 m-2">
+  <h1 class="text-primary text-center p-2 m-2">
+  Student List
+  </h1>
+  <button class="btn btn-info p-2 m-2" data-toggle="modal" data-target="#newmodal">
+  New Student
+  </button>
+  <table class="table table-striped table-bordered table-active">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Salary</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Amit</td>
+      <td>22</td>
+      <td>200000</td>
+      <td>
+        <button class="btn btn-info p-2 m-2" data-toggle="modal" data-target="#Editmodal">
+         Edit
+        </button>
+        <button class="btn btn-danger p-2 m-2">
+         Delete
+        </button>
+      </td>
+    </tr>
+    <!-- <tr >
+  <td>{{Student.name}}</td>
+  <td>{{Student.age}}</td>
+  <td>{{Student.email}}</td>
+  <td>
+    <button type="button"   data-target="#editModal" data-toggle="modal" class="btn btn-info">Edit</button>
+    <button  type="button" class="btn btn-danger p-1 m-1">Delete</button>
+  </td>
+    </tr> -->
+  </tbody>
+  </table>
+  </div>
+  <form>
+    <!-- Save -->
+    <div class="modal" role="dialog" id="newmodal">
+      <div class="modal-dialog">
+     <div class="modal-content">
+      <!-- Header -->
+      <div class="modal-header">
+        <div class="modal-title">
+        New Student
+        </div>
+        <button class="close" data-dismiss="modal" type="button">
+         <span>&times;</span>
+         </button>
+      </div>
+      <!-- Body -->
+      <div class="modal-body">
+          <div class="form-group row">
+            <label for="txtname" class="col-sm-4">Name</label>
+            <div class="col-sm-8">
+              <input type="text"   id="txtname" placeholder="StudentName" name="name" class="form-control">
+            </div>
+          </div>
+          <!-- Age -->
+          <div class="form-group row">
+            <label for="txtage" class="col-sm-4">Age</label>
+            <div class="col-sm-8">
+                <input type="number"   id="txtage" placeholder="Age" name="age" class="form-control">
+            </div>
+          </div>
+          <!-- Email -->
+          <div class="form-group row">
+            <label for="txtemail" class="col-sm-4">Email</label>
+            <div class="col-sm-8">
+              <input type="text"  id="txtemail" placeholder="email" name="email" class="form-control">
+            </div>
+          </div>
+       </div>
+     <!-- Footer -->
+     <div class="modal-footer">
+      <button  class="btn btn-danger" data-dismiss="modal">Save</button>
+      <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+    </div>
+      </div>
+      </div>
+  
+    </div>
+  </form>
+  
+  <!-- Edit -->
+  <form>
+    
+    <div class="modal" role="dialog" id="editModal">
+      <div class="modal-dialog">
+     <div class="modal-content">
+      <!-- Header -->
+      <div class="modal-header">
+        <div class="modal-title">
+        New Student
+        </div>
+        <button class="close" data-dismiss="modal" type="button">
+         <span>&times;</span>
+         </button>
+      </div>
+      <!-- Body -->
+      <div class="modal-body">
+          <div class="form-group row">
+            <label for="txtname" class="col-sm-4">Name</label>
+            <div class="col-sm-8">
+              <input type="text"    id="txtname" placeholder="StudentName" name="name" class="form-control">
+            </div>
+          </div>
+          <!-- Age -->
+          <div class="form-group row">
+            <label for="txtage" class="col-sm-4">Age</label>
+            <div class="col-sm-8">
+                <input type="number"   id="txtage" placeholder="Age" name="age" class="form-control">
+            </div>
+          </div>
+          <!-- Email -->
+          <div class="form-group row">
+            <label for="txtemail" class="col-sm-4">Email</label>
+            <div class="col-sm-8">
+              <input type="text"   id="txtemail" placeholder="email" name="email" class="form-control">
+            </div>
+          </div>
+       </div>
+     <!-- Footer -->
+     <div class="modal-footer">
+      <button class="btn btn-danger" data-dismiss="modal">Update</button>
+      <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+    </div>
+      </div>
+      </div>
+  
+    </div>
+  </form>
+  
